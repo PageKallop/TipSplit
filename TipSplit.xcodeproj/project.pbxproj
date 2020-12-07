@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C07A4171257EA2E200ABB1E6 /* TipBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A4170257EA2E200ABB1E6 /* TipBrain.swift */; };
 		C0B4ACE6257D80B900EC39A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ACE5257D80B900EC39A0 /* AppDelegate.swift */; };
 		C0B4ACE8257D80B900EC39A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ACE7257D80B900EC39A0 /* SceneDelegate.swift */; };
 		C0B4ACEA257D80B900EC39A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ACE9257D80B900EC39A0 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		C0B4ACF2257D80BA00EC39A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B4ACF0257D80BA00EC39A0 /* LaunchScreen.storyboard */; };
 		C0B4ACFD257D80BA00EC39A0 /* TipSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ACFC257D80BA00EC39A0 /* TipSplitTests.swift */; };
 		C0B4AD08257D80BA00EC39A0 /* TipSplitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4AD07257D80BA00EC39A0 /* TipSplitUITests.swift */; };
+		C0B4AD19257DBB1300EC39A0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4AD18257DBB1300EC39A0 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C07A4170257EA2E200ABB1E6 /* TipBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBrain.swift; sourceTree = "<group>"; };
 		C0B4ACE2257D80B900EC39A0 /* TipSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B4ACE5257D80B900EC39A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0B4ACE7257D80B900EC39A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		C0B4AD03257D80BA00EC39A0 /* TipSplitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipSplitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B4AD07257D80BA00EC39A0 /* TipSplitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSplitUITests.swift; sourceTree = "<group>"; };
 		C0B4AD09257D80BA00EC39A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B4AD18257DBB1300EC39A0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				C0B4ACE5257D80B900EC39A0 /* AppDelegate.swift */,
 				C0B4ACE7257D80B900EC39A0 /* SceneDelegate.swift */,
+				C0B4AD18257DBB1300EC39A0 /* ResultsViewController.swift */,
 				C0B4ACE9257D80B900EC39A0 /* ViewController.swift */,
+				C07A4170257EA2E200ABB1E6 /* TipBrain.swift */,
 				C0B4ACEB257D80B900EC39A0 /* Main.storyboard */,
 				C0B4ACEE257D80BA00EC39A0 /* Assets.xcassets */,
 				C0B4ACF0257D80BA00EC39A0 /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			files = (
 				C0B4ACEA257D80B900EC39A0 /* ViewController.swift in Sources */,
 				C0B4ACE6257D80B900EC39A0 /* AppDelegate.swift in Sources */,
+				C0B4AD19257DBB1300EC39A0 /* ResultsViewController.swift in Sources */,
 				C0B4ACE8257D80B900EC39A0 /* SceneDelegate.swift in Sources */,
+				C07A4171257EA2E200ABB1E6 /* TipBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
