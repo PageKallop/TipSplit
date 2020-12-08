@@ -52,7 +52,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fO9-dm-H4j">
                                 <rect key="frame" x="120" y="650" width="174" height="32"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hei-k3-Pzc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hei-k3-Pzc">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="32"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <nil key="textColor"/>
@@ -155,6 +155,7 @@
                         <outlet property="stepperButton" destination="kcb-o1-JFC" id="t0f-d9-mar"/>
                         <outlet property="tenPctButton" destination="GCi-bL-3RI" id="ghM-J3-7kz"/>
                         <outlet property="twentyPctButton" destination="bbR-j8-QSt" id="zSf-bX-ea0"/>
+                        <segue destination="gUd-7T-Zcc" kind="presentation" identifier="showTotal" id="GFW-GH-UKI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -166,11 +167,11 @@
             <objects>
                 <viewController id="gUd-7T-Zcc" customClass="ResultsViewController" customModule="TipSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="woa-y0-FmA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-BR-cR7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="527"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="473"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total per person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLd-jK-LrS">
                                         <rect key="frame" x="45" y="75" width="336" height="75"/>
@@ -190,7 +191,7 @@
                                 <color key="backgroundColor" red="0.82514470309999999" green="1" blue="0.81130496169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4L-CA-e4v">
-                                <rect key="frame" x="120" y="780" width="174" height="42"/>
+                                <rect key="frame" x="120" y="726" width="174" height="42"/>
                                 <color key="backgroundColor" red="0.93614123179999997" green="1" blue="0.91435066659999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Recalculate">
@@ -201,7 +202,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUe-Fn-Pq6">
-                                <rect key="frame" x="20" y="535" width="374" height="185"/>
+                                <rect key="frame" x="20" y="481" width="374" height="185"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
