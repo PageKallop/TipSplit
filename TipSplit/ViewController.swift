@@ -7,10 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    var tipCalculated = "0.00"
-    
+class ViewController: UIViewController{
     
     
     @IBOutlet weak var billTextField: UITextField!
@@ -25,7 +22,11 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var stepperButton: UIStepper!
     
+
+    
     var tip = 0.10
+    var tipCalculated = "0.00"
+    var peopleToSplit = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +55,9 @@ class ViewController: UIViewController {
         twentyPctButton.layer.borderWidth = 2.0
         twentyPctButton.layer.borderColor = UIColor.black.cgColor
         twentyPctButton.layer.backgroundColor = UIColor.white.cgColor
+    
     }
+        
     
     
     
@@ -85,10 +88,12 @@ class ViewController: UIViewController {
     }
     
     
-    
+
+        
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         
+        // updatinlabel to number of people to split tip
         
         splitNumberLabel.text = Int(sender.value).description
     }
@@ -122,6 +127,8 @@ class ViewController: UIViewController {
         if segue.identifier == "showTotal" {
             let destinationVC = segue.destination as! ResultsViewController
             destinationVC.tipCalculated = tipCalculated
+            destinationVC.tip = Int(tip * 100)
+            destinationVC.split = Int(peopleToSplit)
         }
     }
     
